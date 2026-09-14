@@ -789,6 +789,7 @@ section {
   border-bottom: 1px dashed rgba(212, 175, 106, 0.2);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
 
