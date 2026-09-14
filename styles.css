@@ -780,9 +780,10 @@ section {
   padding: 0;
   margin: 0;
   text-align: left;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--babyblue);
 }
+
 .tradition-slot li {
   padding: 9px 0;
   border-bottom: 1px dashed rgba(212, 175, 106, 0.2);
@@ -790,9 +791,10 @@ section {
   justify-content: space-between;
   gap: 10px;
 }
+
 .tradition-slot li:last-child { border-bottom: none; }
-.tradition-slot .slot-num { color: var(--gold); font-family: var(--font-display); }
-.tradition-slot .slot-name { font-style: italic; opacity: 0.7; }
+.tradition-slot .slot-num { color: var(--gold); font-family: var(--font-display); font-size: 1.25rem; }
+.tradition-slot .slot-name { font-weight: 600; opacity: 0.9; }
 
 /* =========================================================
    PROGRAM TIMELINE
