@@ -1353,7 +1353,7 @@ footer p {
   .countdown-num { font-size: clamp(2rem, 9vw, 2.6rem); }
   .countdown-label { font-size: 0.66rem; }
 
-  /* --- 18 Roses / Candles / Treasures --- */
+  /* --- 18 chocolates / bluebills / hard shots / roses / treasure / special candle --- */
   .tradition-card { padding: 34px 22px; }
   .tradition-card .motif { width: 44px; height: 44px; margin-bottom: 16px; }
   .tradition-card h3 { font-size: 1.4rem; }
@@ -1370,8 +1370,6 @@ footer p {
   /* --- Gallery: single column, taller cards, captions always visible --- */
   .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 240px; gap: 14px; }
   .gallery-item.wide, .gallery-item.tall { grid-column: span 1; grid-row: span 1; }
-  .gallery-item::after { opacity: 1; background: linear-gradient(0deg, rgba(11,19,48,0.75), transparent 60%); }
-  .gallery-item span.caption { opacity: 1; transform: translateY(0); }
 
   /* --- Messages --- */
   .message-card { padding: 26px 22px; }
