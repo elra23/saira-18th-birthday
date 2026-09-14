@@ -1317,6 +1317,13 @@ footer p {
   .hero-title { font-size: clamp(1.15rem, 5.5vw, 1.4rem); margin-bottom: 20px; }
   .hero-tagline { font-size: 0.95rem; margin-bottom: 30px; padding: 0 4px; }
   .hero-meta { font-size: 0.85rem; gap: 10px; margin-bottom: 34px; }
+  .hero-meta span {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero-meta span svg {
+    margin-top: 3px;
+  }
   .hero-actions { flex-direction: column; width: 100%; gap: 14px; }
   .scroll-cue { bottom: 20px; }
 
