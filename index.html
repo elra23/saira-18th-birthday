@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saira's 18th Birthday Debut</title>
+<meta name="description" content="Join us as we celebrate Saira's 18th birthday debut">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/tabicon.png">
+</head>
+<body>
+
+<!-- ============ AMBIENT LAYERS ============ -->
+<canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+<div class="butterfly-layer" id="butterfly-layer" aria-hidden="true"></div>
+
+<!-- ============ OPEN INVITATION VEIL ============ -->
+<div class="invite-veil" id="inviteVeil">
+  <div class="invite-veil-card">
+    
+    <p class="invite-veil-text">Preparing your invitation&hellip;</p>
+  </div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="site-nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Home">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 12 C16 4, 4 6, 4 18 C4 28, 14 32, 20 42 C26 32, 36 28, 36 18 C36 6, 24 4, 20 12 Z" stroke="currentColor" stroke-width="1.3"/>
+      </svg>
+      <span>Saira's 18th Birthday</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#details">Details</a></li>
+      <li><a href="#countdown">Countdown</a></li>
+      <li><a href="#tradition">Program</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#messages">Messages</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-frame"></div>
+  <div class="hero-content">
+    <p class="hero-kicker" id="h-kicker">A Dream in Blue &amp; Gold</p>
+    <h1 class="hero-name" id="h-name">Saira's</h1>
+    <p class="hero-title" id="h-title">18th Birthday Debut</p>
+    <p class="hero-tagline" id="h-tagline">Join us as we celebrate her journey into adulthood.</p>
+    <div class="hero-meta" id="h-meta">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        September 26, 2026
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        5:00 PM
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+        St Benedict, Remedios, Lubao, Pampanga (Nuqui Residents)
+      </span>
+    </div>
+    <div class="hero-actions" id="h-actions">
+      <button class="btn btn-primary" id="openInviteBtn">Open Invitation</button>
+      <a href="#rsvp" class="btn btn-ghost">Save the Date</a>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>SCROLL</span>
+    <span class="stem"></span>
+  </div>
+</header>
+
+<!-- ============ INTRODUCTION ============ -->
+<section class="intro" id="intro">
+  <div class="container intro-grid">
+    <div class="intro-portrait reveal">
+      <div class="portrait-frame">
+        <svg class="portrait-ornament tl" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2 Q2 30 30 30" stroke="currentColor" stroke-width="1"/>
+          <circle cx="2" cy="2" r="3" fill="currentColor"/>
+        </svg>
+        <div class="portrait-frame-inner">
+          <img src="assets/intropic.jpg" alt="Saira's portrait" class="portrait-photo">
+        </div>
+        <svg class="portrait-ornament br" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2 Q2 30 30 30" stroke="currentColor" stroke-width="1"/>
+          <circle cx="2" cy="2" r="3" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+    <div class="intro-copy reveal reveal-delay-1">
+      <span class="eyebrow">The Invitation</span>
+      <h2>Eighteen years of dreams, laughter, memories, and love.</h2>
+      <p class="intro-lede">From a little girl with butterfly wings in her dreams, to a young woman ready to take flight.</p>
+      <p>With hearts full of gratitude, we invite you to witness this milestone — a night wrapped in soft blue skies, golden light, and the quiet magic of a garden in bloom. It is a celebration of who she was, who she is, and who she is becoming.</p>
+      <p>We would be honored to have you beside us as we mark eighteen years of grace, growth, and unforgettable moments.</p>
+      <p class="intro-signature">- Saira</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVENT DETAILS ============ -->
+<section class="details" id="details">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Celebration</span>
+      <h2 class="section-title">Event Details</h2>
+    </div>
+    <p class="section-sub reveal">Every detail has been woven together for an evening to remember.</p>
+    <div class="detail-cards">
+      <div class="glass-card reveal">
+        <div class="icon-ring">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        </div>
+        <h3>Date</h3>
+        <p>Mark your calendar for</p>
+        <span class="detail-highlight">September 26, 2026</span>
+      </div>
+      <div class="glass-card reveal reveal">
+        <div class="icon-ring">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>Time</h3>
+        <p>Doors open promptly at</p>
+        <span class="detail-highlight">5:00 PM</span>
+      </div>
+      <div class="glass-card reveal reveal">
+        <div class="icon-ring">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+        </div>
+        <h3>Venue</h3>
+        <p>Held with love at</p>
+        <span class="detail-highlight">St Benedict, Remedios, Lubao, Pampanga (Nuqui Residents)</span>
+      </div>
+      <div class="glass-card reveal reveal">
+        <div class="icon-ring">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4l2 3h8l2-3M8 7v13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7"/><path d="M8 7 5 9l1 3M16 7l3 2-1 3"/></svg>
+        </div>
+        <h3>Dress Code</h3>
+        <p>Casual Attire — Any Shade of Blue</p>
+        <span class="detail-highlight">Girls: Top &amp; Pants / Dress <br>Boys: Polo Shirt &amp; Pants</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="countdown" id="countdown">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Almost Here</span>
+      <h2 class="section-title">Counting Down to Her Special Day</h2>
+    </div>
+    <div class="countdown-grid reveal reveal-delay-1" id="countdownGrid" data-target="2026-09-26T17:00:00">
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-days">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-hours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-minutes">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-seconds">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 18 CHOCOLATES / BLUEBILLS / HARD SHOTS / ROSES/ TREASURE/ SPECIAL CANDLE ============ -->
+<section class="tradition" id="tradition">
+  <div class="container">
+    <div class="section-head reveal">
+      <h3 class="eyebrow">Traditional Debut Program</h3>
+      <h2 class="section-title">18 Chocolates, Blue Bills, Hard Shots, Roses, Treasure &amp; Special Candles</h2>
+    </div>
+    <p class="section-sub reveal">Cherished traditions, carried by the people who mean the most to her.</p>
+    <div class="tradition-grid">
+
+      <div class="tradition-card reveal">
+        <svg class="motif" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="16" y="18" width="16" height="20" rx="2" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M20 18v-4a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M20 26h8M20 31h5" stroke="currentColor" stroke-width="1.1"/>
+        </svg>
+        <span class="count">18</span>
+        <h3>Chocolates</h3>
+        <p>Eighteen loved ones offer a sweet treat, a wish for a life full of sweetness ahead.</p>
+        <ul class="tradition-slot" id="chocolatesList"></ul>
+      </div>
+
+      <div class="tradition-card reveal">
+        <svg class="motif" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="10" width="24" height="28" rx="3" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M12 18h24M18 10v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.3"/>
+        </svg>
+        <span class="count">18</span>
+        <h3>Blue Bills</h3>
+        <p>Eighteen relatives and friends give a monetary gift, blessing her future with generosity.</p>
+        <ul class="tradition-slot" id="billsList"></ul>
+      </div>
+
+      <div class="tradition-card reveal">
+        <svg class="motif" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 16h12l-2 10a4 4 0 0 1-4 3.5 4 4 0 0 1-4-3.5L18 16Z" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M24 29.5V36M18 36h12" stroke="currentColor" stroke-width="1.3"/>
+        </svg>
+        <span class="count">18</span>
+        <h3>Hard Shots</h3>
+        <p>Eighteen friends share a toast with her, raising a glass to celebrate her new chapter.</p>
+        <ul class="tradition-slot" id="shotsList"></ul>
+      </div>
+
+      <div class="tradition-card reveal">
+        <svg class="motif" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 30c-6 0-9-5-9-9 0-4 3-6 6-6 2 0 3 1 3 3 0-2 1-3 3-3 3 0 6 2 6 6 0 4-3 9-9 9Z" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M24 30v12M18 42h12" stroke="currentColor" stroke-width="1.3"/>
+        </svg>
+        <span class="count">18</span>
+        <h3>Roses</h3>
+        <p>Eighteen gentlemen present a rose, each honoring a quality they admire in her.</p>
+        <ul class="tradition-slot" id="rosesList"></ul>
+      </div>
+
+      <div class="tradition-card reveal">
+        <svg class="motif" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="20" width="28" height="18" rx="2" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M10 24h28M20 20v-4a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="1.3"/>
+        </svg>
+        <span class="count">18</span>
+        <h3>Treasures</h3>
+        <p>Eighteen loved ones present a gift, a treasure to carry with her into this new chapter.</p>
+        <ul class="tradition-slot" id="treasuresList"></ul>
+      </div>
+
+      <div class="tradition-card reveal">
+        <svg class="motif" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 14c2 3 3 6 3 8a3 3 0 1 1-6 0c0-2 1-5 3-8Z" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M20 24h8v16a4 4 0 0 1-4 4 4 4 0 0 1-4-4V24Z" stroke="currentColor" stroke-width="1.3"/>
+        </svg>
+        <span class="count">18</span>
+        <h3>Candles</h3>
+        <p>Eighteen women light a candle, offering wishes and words of wisdom to guide her path.</p>
+        <ul class="tradition-slot" id="candlesList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAM TIMELINE ============ -->
+<section class="program" id="program">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Evening Unfolds</span>
+      <h2 class="section-title">Program of the Night</h2>
+    </div>
+    <p class="section-sub reveal">A gentle guide through the evening's celebration.</p>
+    <div class="timeline-wrap" id="timelineWrap">
+      <!-- timeline items injected/marked up below -->
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Guest Arrival</h3><p>Welcome drinks and soft music as guests are seated.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Welcome Remarks</h3><p>A warm greeting to open the celebration.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Grand Entrance</h3><p>The debutant makes her entrance among family and friends.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Opening Prayer</h3><p>A moment of gratitude and reflection.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>18 Chocolates</h3><p>Eighteen loved ones offer a sweet treat, a wish for a life full of sweetness ahead.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>18 Blue Bills</h3><p>Eighteen relatives and friends give a monetary gift, blessing her future with generosity.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>18 Hard Shots</h3><p>Eighteen friends share a toast with her, raising a glass to celebrate her new chapter.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>18 Roses</h3><p>Eighteen gentlemen honor her with a rose and a dance.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>18 Treasures</h3><p>Eighteen loved ones present a gift, a treasure to carry with her into this new chapter.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>18 Candles</h3><p>Eighteen women light a candle, offering wishes and words of wisdom to guide her path.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Dinner</h3><p>Guests are served while the evening settles into warmth.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Special Performances</h3><p>Songs, dances, and surprises from family and friends.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Birthday Celebration</h3><p>The traditional cake cutting and birthday toast.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Photo Session</h3><p>Capturing the night's most treasured moments.</p></div>
+      <div class="timeline-item reveal"><span class="t-dot"></span><h3>Closing</h3><p>A heartfelt thank-you to close a beautiful evening.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">A Glimpse of Her</span>
+      <h2 class="section-title">As She Is Now</h2>
+    </div>
+    <p class="section-sub reveal">A closer look at her, right now</p>
+    <div class="gallery-grid">
+    <div class="gallery-item wide reveal">
+    <img src="assets/gallery-1.jpg" class="gallery-photo">
+    </div>
+    <div class="gallery-item wide reveal">
+      <img src="assets/gallery-2.jpg" class="gallery-photo">
+    </div>
+    <div class="gallery-item wide reveal">
+      <img src="assets/gallery-3.jpg" class="gallery-photo">
+    </div>
+  </div>
+</section>
+
+<!-- ============ MESSAGES ============ -->
+<section class="messages" id="messages">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">From Those Who Love Her</span>
+      <h2 class="section-title">Words from the Heart</h2>
+    </div>
+    <p class="section-sub reveal">Gentle words, left for her to treasure always.</p>
+
+    <div class="form-panel message-form-card reveal">
+      <div class="section-head" style="margin-bottom: 30px;">
+        <h3 style="font-family: var(--font-display); font-size: 1.6rem;">Leave Your Own Message</h3>
+      </div>
+      <form id="messageForm" action="https://formsubmit.co/ckristinaelaine@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New message for Saira on her 18th Debut!">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="field">
+          <label for="msgName">Your Name</label>
+          <input type="text" id="msgName" name="name" placeholder="e.g. Tita Anna" required>
+        </div>
+        <div class="field">
+          <label for="msgText">Your Message</label>
+          <textarea id="msgText" name="message" placeholder="Share a wish, a memory, or a blessing..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-note">(This is just optional and you don't need to fill it out, but we'd love to hear the message for the birthday girl from you, especially if you are not coming)</p>
+      </form>
+      <div class="form-success" id="messageSuccess">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+        <h3>Message Received</h3>
+        <p>Thank you for your sweet words — they will be treasured.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section class="rsvp" id="rsvp">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kindly Respond</span>
+      <h2 class="section-title">Will You Celebrate With Me?</h2>
+    </div>
+    <p class="section-sub reveal">Please let us know if you'll be joining the celebration by September 26 at 5:00 PM.</p>
+
+    <div class="form-panel reveal" style="max-width: 720px; margin: 0 auto;">
+      <form id="rsvpForm" action="https://formsubmit.co/ckristinaelaine@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New RSVP Submission for Saira's 18th Debut!">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-row">
+          <div class="field">
+            <label for="rsvpName">Full Name</label>
+            <input type="text" id="rsvpName" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="rsvpGuests">Number of Guests</label>
+            <input type="number" id="rsvpGuests" name="guests" min="1" max="10" placeholder="e.g. 2" required>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label>Will you be attending?</label>
+          <div class="radio-group" id="attendanceGroup">
+            <label class="radio-pill" data-value="yes">
+              <input type="radio" name="attendance" value="Joyfully Accepts" required>
+              Joyfully Accepts
+            </label>
+            <label class="radio-pill" data-value="no">
+              <input type="radio" name="attendance" value="Regretfully Declines">
+              Regretfully Declines
+            </label>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label for="rsvpMessage">Message (optional)</label>
+          <textarea id="rsvpMessage" name="message" placeholder="A note for the debutant..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Submit RSVP</button>
+        <p class="form-note">Kindly respond by September 25. We can't wait to celebrate with you.</p>
+      </form>
+
+      <div class="form-success" id="rsvpSuccess">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+        <h3>Thank You!</h3>
+        <p>Your RSVP has been submitted and received. We look forward to celebrating with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENUE ============ -->
+<section class="venue" id="venue">
+  <div class="container venue-grid">
+    <div class="venue-copy reveal">
+      <span class="eyebrow">Getting There</span>
+      <h3>Nuqui Residence</h3>
+      <p class="venue-address">St Benedict, Remedios, Lubao, Pampanga</p>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=14.9164208,120.57315949999999" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="directionsBtn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+        Get Directions
+      </a>
+    </div>
+    <div class="venue-map reveal reveal-delay-1">
+      <iframe
+    class="venue-map-embed"
+    src="https://maps.google.com/maps?q=14.9164208,120.57315949999999&z=16&output=embed"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Venue location map">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BACKGROUND MUSIC ============ -->
+<audio id="bgAudio" loop preload="auto" style="display:none;">
+  <source src="assets/background-music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing" id="closing">
+  <div class="closing-content">
+    <p class="closing-message reveal">"Thank you for being part of my 18th chapter."</p>
+    <p class="closing-signoff reveal reveal-delay-1">With Love,</p>
+    <p class="closing-name reveal reveal-delay-1">Saira</p>
+    <div class="closing-actions reveal reveal-delay-2">
+      <button class="btn btn-primary" id="shareBtn">Share This Invitation</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Made with love for Saira's 18th Birthday Debut &middot; Created and Designed by Raven Dave Falalimpa</p>
+    <p>Special thanks to my sweetest girl, Kristina Elaine Cawigan, for helping me with recommendations and improvements for this website.💜</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
