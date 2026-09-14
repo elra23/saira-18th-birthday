@@ -92,7 +92,7 @@
     const layer = document.getElementById('butterfly-layer');
     if (!layer || prefersReducedMotion) return;
 
-    const COUNT = window.innerWidth < 720 ? 8 : 25;
+    const COUNT = window.innerWidth < 720 ? 10 : 25;
     const palette = ['#D4AF6A', '#A9C6E8', '#F0DBA6', '#CFE0F5'];
 
     function makeButterflySVG(color) {
