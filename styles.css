@@ -680,7 +680,36 @@ section {
   padding: 28px 24px;
 }
 
+.color-palette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
 
+.color-palette .swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.swatch.beige {
+  background-color: #F5F1E7; /* Beige & Cream */
+}
+
+.swatch.pink {
+  background-color: #F8C8D4; /* Soft Pink */
+}
+
+.swatch.yellow {
+  background-color: #FCE694; /* Soft Yellow */
+}
+
+.swatch.soft-gray {
+  background-color: #C5C6C9; /* Soft Gray */
 
 /* =========================================================
    COUNTDOWN
