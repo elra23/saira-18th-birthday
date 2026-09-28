@@ -683,33 +683,39 @@ section {
 .color-palette {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.color-palette .swatch {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%; 
-  border: 1px solid rgba(255, 255, 255, 0.2); 
+.swatch-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 58px;
+}
+
+.swatch-item .swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.swatch.beige {
-  background-color: #F5F1E7; /* Beige & Cream */
+.swatch-item .swatch-label {
+  font-size: 0.75rem;
+  color: #e0e0e0;
+  text-align: center;
+  line-height: 1.2;
 }
 
-.swatch.pink {
-  background-color: #F8C8D4; /* Soft Pink */
-}
-
-.swatch.yellow {
-  background-color: #FCE694; /* Soft Yellow */
-}
-
-.swatch.soft-gray {
-  background-color: #C5C6C9; /* Soft Gray */
+.swatch.beige { background-color: #F5F1E7; }
+.swatch.pink { background-color: #F8C8D4; }
+.swatch.yellow { background-color: #FCE694; }
+.swatch.soft-gray { background-color: #C5C6C9; }
 
 /* =========================================================
    COUNTDOWN
